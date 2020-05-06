@@ -1,0 +1,47 @@
+body {
+	background-color: #f5f5f5;
+}
+
+.container {
+	max-width: 350px;
+}
+
+.title {
+	margin-top: 20vh;
+}
+
+.form-group {
+	margin-top: 50px;
+}
+
+input[name='username'] {
+	transition: 1.5s;
+	border-top-right-radius: 18px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 18px;
+	border-top-left-radius: 0;
+}
+
+input[name='password'] {
+	transition: 1.5s;
+	border-top-right-radius: 18px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 18px;
+	border-top-left-radius: 0;
+}
+
+input[name='username']:focus {
+	transition: 1.5s;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 18px;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 18px;
+}
+
+input[name='password']:focus {
+	transition: 1.5s;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 18px;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 18px;
+}
