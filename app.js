@@ -1,6 +1,7 @@
 const express = require('express')
 const exphdbs = require('express-handlebars')
 const bodyParser = require('body-parser')
+const checkPermission = require('./permission-checker')
 const app = express()
 const hostname = '127.0.0.1'
 const port = 3000
@@ -15,7 +16,14 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-	res.render('home')
+	const checkedResult = checkPermission(req.body)
+	if (!checkedResult) {
+		const userInput = req.body
+		const errMessage = 'Wrong Email or Password!'
+		res.render('home', { errMessage, userInput })
+	} else {
+		res.render('userPage', { checkedResult })
+	}
 })
 
 app.listen(port, hostname, () => {
