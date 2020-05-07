@@ -31,7 +31,7 @@ input[name='email'] {
 	border-top-left-radius: 0;
 }
 
-input[name='password'] {
+input[name='email'] {
 	transition: 1.2s;
 	border-top-right-radius: 18px;
 	border-bottom-right-radius: 0;
