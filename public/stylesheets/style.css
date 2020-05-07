@@ -23,7 +23,7 @@ form {
 	padding-top: 45px;
 }
 
-input[name='username'] {
+input[name='email'] {
 	transition: 1.2s;
 	border-top-right-radius: 18px;
 	border-bottom-right-radius: 0;
