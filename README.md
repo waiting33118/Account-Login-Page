@@ -38,6 +38,28 @@ npm start
 The server is running on http://127.0.0.1:3000
 ```
 
+## 測試用帳號密碼
+
+```
+帳號
+密碼
+
+tony@stark.com
+iamironman
+
+captain@hotmail.com
+icandothisallday
+
+peter@parker.com
+enajyram
+
+natasha@gamil.com
+*parol#@$!
+
+nick@shield.com
+password
+```
+
 ## 環境建置
 
 - Node.js v12.16.3 -執行環境
